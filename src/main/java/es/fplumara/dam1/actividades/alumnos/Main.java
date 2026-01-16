@@ -4,7 +4,6 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
         List<Alumno> alumnosEntrada = List.of(
                 new Alumno("123A", "Ana"),
                 new Alumno("123A", "Ana María"),
@@ -26,6 +25,7 @@ public class Main {
                 new Alumno("606J", "Juan"),
                 new Alumno("707L", "Lola"),
                 new Alumno("707L", "Lola Martínez")
+
         );
 
         Actividad actividad = new Actividad();

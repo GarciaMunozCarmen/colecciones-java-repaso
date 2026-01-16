@@ -2,7 +2,7 @@ package es.fplumara.dam1.actividades.alumnos;
 
 import java.util.Objects;
 
-public class Alumno implements Comparable{
+public class Alumno implements Comparable<Alumno>{
     private final String dni;
     private final String nombre;
 
@@ -37,12 +37,7 @@ public class Alumno implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
-        Alumno a = (Alumno) o;
-        if(dni.equalsIgnoreCase(a.dni)) {
-            return nombre.compareTo(a.nombre);
-        }else {
-            return dni.compareTo(a.dni);
-        }
+    public int compareTo(Alumno a) {
+        return dni.compareTo(a.dni);
     }
 }
