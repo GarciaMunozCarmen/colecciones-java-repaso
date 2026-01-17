@@ -75,7 +75,7 @@ public class Main {
         Actividad actividad = new Actividad();
         actividad.parteA_MapList(registros);
 
-        // Extra (cuando toque):
-        // actividad.parteB_MapMap_MaxPorAsignatura(registros);
+//         Extra (cuando toque):
+         actividad.parteB_MapMap_MaxPorAsignatura(registros);
     }
 }
